@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      // Converts the path to a query string and redirects to index.html
+      const path = window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace('/' + window.location.pathname.split('/')[1] + '/?p=' + encodeURIComponent(path));
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
